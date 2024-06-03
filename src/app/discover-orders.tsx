@@ -25,7 +25,9 @@ export const DiscoverOrders = async () => {
         <CardTitle>Discover Orders</CardTitle>
         <CardDescription className="max-w-lg text-balance leading-relaxed">
           See every detail of your orders historically by day, week, month, or
-          even by product or groups of products.
+          even by product or groups of products. Get insights on your sales
+          performance and make better decisions. Get a tour to learn more about
+          how to use the Orders screen to its full potential.
         </CardDescription>
       </CardHeader>
       <CardFooter className="flex gap-4">

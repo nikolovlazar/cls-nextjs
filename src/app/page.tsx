@@ -47,6 +47,7 @@ import {
 import { DiscoverOrders } from "./discover-orders";
 import { Suspense } from "react";
 import { OrderDetails } from "./order-details";
+import { ClsCard } from "./cls-card";
 
 export default function Home() {
   return (
@@ -56,20 +57,7 @@ export default function Home() {
           <Suspense fallback={<></>}>
             <DiscoverOrders />
           </Suspense>
-          <Card>
-            <CardHeader className="pb-2">
-              <CardDescription>This Week</CardDescription>
-              <CardTitle className="text-4xl">$1,329</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-xs text-muted-foreground">
-                +25% from last week
-              </div>
-            </CardContent>
-            <CardFooter>
-              <Progress value={25} aria-label="25% increase" />
-            </CardFooter>
-          </Card>
+          <ClsCard />
           <Card>
             <CardHeader className="pb-2">
               <CardDescription>This Month</CardDescription>
