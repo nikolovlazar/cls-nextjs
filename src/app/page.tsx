@@ -48,10 +48,11 @@ import { DiscoverOrders } from "./discover-orders";
 import { Suspense } from "react";
 import { OrderDetails } from "./order-details";
 import { ClsCard } from "./cls-card";
+import { SentryClientTag } from "./sentry-client-tag";
 
 export default function Home() {
   return (
-    <>
+    <SentryClientTag>
       <div className="grid auto-rows-max items-start gap-4 md:gap-8 lg:col-span-2">
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
           <Suspense fallback={<></>}>
@@ -428,6 +429,6 @@ export default function Home() {
           </CardFooter>
         </Card>
       </div>
-    </>
+    </SentryClientTag>
   );
 }
