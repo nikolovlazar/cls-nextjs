@@ -7,7 +7,7 @@ import { useEffect, PropsWithChildren } from 'react';
 export const SentryClientTag = ({ children }: PropsWithChildren<{}>) => {
   useEffect(() => {
     const dismissedDiscoverOrders =
-      !!getCookie('dismissedDiscoverOrders') ?? false;
+      !!getCookie('dismissed-discover-orders') ?? false;
 
     Sentry.setTag('dismissed-discover-orders', dismissedDiscoverOrders);
 
